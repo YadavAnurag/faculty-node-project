@@ -1,0 +1,17 @@
+include ./mixins.jade
+
+script(src="./javascripts/menu.js")
+
+.menu-trigger.closebtn(onclick="openNav()")
+  i.fas.fa-bars
+
+.sidenav#mySidenav
+  ul
+    i.fas.fa-times.menulinka.special(onclick="closeNav()")
+    +menua("/", "About Me", "About", "menulinka")
+    +menua("/", "Responsibilities", "Responsibilities", "menulinka")
+    +menua("/", "See My Achievements", "Achievements", "menulinka")
+    +menua("/", "Home", "Publications", "menulinka")
+    +menua("/", "Home", "Subjects", "menulinka")
+    +menua("/", "Home", "Contact", "menulinka")
+
